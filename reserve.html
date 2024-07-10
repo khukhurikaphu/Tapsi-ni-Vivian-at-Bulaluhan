@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">    
+        <link rel="stylesheet" href="mainCss.css">
+        <title>Tapsi ni Vivian at Bulaluhan</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md bg-white navbar-white sticky-top shadow">
+            <a href="index.html" class="navbar-brand"><img src="mm/logo.png" class="img-fluid"></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false"><i class="bi bi-list"></i></button>
+
+            <div class="collapse navbar-collapse" id="navCollapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reserve.html" class="nav-link">Reservations</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div style="height: 10px;"></div>
+        <div class="container">
+            <div class="reserveform">
+
+                <h1>Tapsi ni Vivian at Bulaluhan Reservations</h1>
+                <p>
+                    <br><br>
+                    Good Day!<br><br>
+                    Thank you for choosing Tapsi ni Vivian at Bulaluhan!
+                    To proceed with your reservation, please accomplish this form.<br><br>
+                </p>
+
+                <form>
+                    <div class="container">
+                        <br><br><br>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="input_description">Name of Reservation</p>
+                                <input type="text" name="name" placeholder="Enter your Name" size="113.5" required><br><br>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <p class="input_description">E-mail Address</p>
+                                <input type="email" name="email" placeholder="Enter your E-mail" size="113.5" required><br><br>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <p class="input_description">Contact Number </p>
+                                <input type="text" name="number" placeholder="Enter your Contact Number" size="113.5" required><br><br>
+                            </div>
+                            <div class="col-lg-6 col-sm-4">
+                                <p class="input_description">Date</p>
+                                <input type="date" name="date" min="{{date | date:'yyyy-MM-dd'}}" placeholder="Please input the date" size="113.5" required><br><br>
+                            </div>
+                            <div class="col-lg-3 col-sm-4">
+                                <p class="input_description">Time</p>
+                                <input type="time" id="appt" name="appt" placeholder="Time" size="113.5" required><br><br>
+                            </div>
+                            <div class="col-lg-3 col-sm-4">
+                                <p class="input_description">No. of People</p>
+                                <input type="number" max="10" min="1" placeholder="Number" required><br><br>
+                            </div>
+                            <div class="col-lg-12">
+                                <p class="input_description">Location </p>
+                                <select name="Location" id="Location" required>
+                                <option value="location1">C. Raymundo Ave. Pasig, Metro Manila</option>
+                                <option value="location2">6 Mayor Gil Fernando Ave, Marikina, 1800 Metro Manila</option>
+                                <option value="location3">Ortigas Ave Ext, Cainta, Rizal</option>
+                                <option value="location4">991 Aurora Blvd, Project 3, Quezon City, 1102 Metro Manila</option>
+                                <option value="location5">Project 3, Quezon City, Metro Manila</option>
+                                <option value="location6">Don Mariano Marcos Ave, Novaliches, Quezon City, Metro Manila</option>
+                                </select>
+                                <br><br>
+                            </div>
+                            <div class="row justify-content-end p-0 m-0">
+                                <input type="reset" value="Reset" class="col-lg-2 m-2 col-sm-3">
+                                <input type="submit" value="Submit" class="col-lg-2 m-2 col-sm-3">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <p></p>
+        <footer class="w-100">
+            <div class="row w-100">
+                <hr>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <ul class="socials">
+                        <li>Tapsihan ni Vivian At Bulaluhan</li>
+                        <li>Project 3, Quezon City 1984</li>
+                        <li>Vivian Del Rosario</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <ul class="socials">
+                        <li><a href="https://www.facebook.com/TapsiNiVivian/"><i class="bi bi-facebook"></i> - @Tapsi ni Vivian at Bulaluhan</a></li>
+                        <li><a href="https://www.instagram.com/tapsinivivian1984?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram"></i> - @tapsinivivian1984</a></li>
+                        <li><a href="https://x.com/TapsiNiVivian"><i class="bi bi-twitter"></i> - @TapsiNiVivian</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <ul class="socials">
+                        <li><i class="bi bi-telephone"></i> - 8633-1151</a></li>
+                        <li><i class="bi bi-telephone"></i> - 8645-0125</a></li>
+                        <li><i class="bi bi-telephone"></i> - 8433-4267</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script>
+            datePickerId.max = new Date().toISOString().split("T")[0];
+        </script>
+    </body>
+</html
